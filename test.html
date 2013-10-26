@@ -3,18 +3,22 @@
 	<title>SimpleBox test</title>
 	
     <link rel="stylesheet" media="screen,projection,tv" href="css/style.css"/>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="SimpleBox.js"></script>
 
 </head>
 <body>
 
 <script>
-	var box1 = new SimpleBox();
-	var box2 = new SimpleBox();
+$(function() {
+	window.box1 = new SimpleBox();
+	window.box2 = new SimpleBox();
+});
 </script>
 
-<input type="button" onclick="box1.show()" value="Show">
-<input type="button" onclick="box1.show()" value="Show">
+<input type="button" onclick="box1.show()" value="Show box1">
+<input type="button" onclick="box2.show()" value="Show box2">
 
 
 
