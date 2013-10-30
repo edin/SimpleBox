@@ -1,26 +1,45 @@
 <html>
 <head>
-	<title>SimpleBox test</title>
-	
-    <link rel="stylesheet" media="screen,projection,tv" href="css/style.css"/>
-	
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="SimpleBox.js"></script>
+    <title>SimpleBox test</title>
 
+    <link rel="stylesheet" media="screen,projection,tv" href="css/style.css"/>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="SimpleBox.js"></script>
 </head>
 <body>
 
+<script type="text/html" id="boxTemplate">
+<div class='sb-main'>
+    <div class='sb-header'>
+        <div class='sb-title'>Dialog title</div>
+        <div class='sb-icons'>
+            <a class='sb-close'>&nbsp;</a>    
+        </div>       
+    </div>
+    <div class='sb-body'>
+    
+    </div>
+    <div class='sb-footer'>
+        <button>OK</button>
+        <button>Cancel</button>
+    </div>
+</div>
+</script>
+
 <script>
 $(function() {
-	window.box1 = new SimpleBox();
-	window.box2 = new SimpleBox();
+    box1 = new SimpleBox();
+    box2 = new SimpleBox();
+    
+    box1.setTemplate($("#boxTemplate").html());
 });
 </script>
 
-<input type="button" onclick="box1.show()" value="Show box1">
-<input type="button" onclick="box2.show()" value="Show box2">
 
 
+<input type="button" onclick="box1.show('box1')" value="Show box1">
+<input type="button" onclick="box2.show('box2')" value="Show box2">
 
 </body>
 </html>

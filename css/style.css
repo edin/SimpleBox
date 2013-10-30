@@ -1,0 +1,57 @@
+.sbFrame {
+  border: 1px solid silver;
+  box-shadow: 0 0 2px 1px #333333;
+  overflow: hidden;
+  background-color: white;
+  z-index: 2000;
+}
+.sbFrame .boxHeader {
+  padding: 5px 10px;
+  color: white;
+  font-weight: bold;
+  background-color: #3b596a;
+}
+.sbFrame .boxClose {
+  margin-top: 2px;
+  width: 14px;
+  height: 14px;
+  float: right;
+  cursor: pointer;
+  background-image: url('bootstrap/img/glyphicons-halflings-white.png');
+  background-position: -312px 0;
+}
+.sbFrame .boxContent {
+  padding: 10px 5px;
+}
+
+
+.sb-main {
+    border:1px solid red;
+    background:#f1f1f1;
+}
+.sb-main .sb-close {
+    background:url(close.png) center center no-repeat;
+    width:30px;
+    display:block;
+}
+
+.sb-main .sb-header {
+    border:1px solid orange;
+    overflow:auto;
+}
+
+.sb-main .sb-header .sb-title {
+    float:left;
+}
+.sb-main .sb-header .sb-icons {
+    float:right;
+    width:30px;
+}
+
+.sb-main .sb-body {
+    border:1px solid purple;
+}
+
+.sb-main .sb-footer {
+    border:1px solid navy;
+}
